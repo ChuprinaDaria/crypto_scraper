@@ -6,7 +6,7 @@ import time
 def main():
     print("[!] Script started.")
 
-    schedule.every().day.at('09:18').do(lambda: scraper.scrape_websites())
+    schedule.every().day.at('09:30').do(lambda: scraper.scrape_websites())
 
     while True:
         schedule.run_pending()
